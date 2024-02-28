@@ -1,0 +1,154 @@
+:root {
+    --red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --desaturated-cyan-design-text: hsl(167, 40%, 24%);
+    --blue-photo-text: hsl(198, 62%, 26%);
+    --moderate-cyan-footer: hsl(168, 34%, 41%);
+    --dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+
+    --font-size: 1.125rem;
+    --fw-normal: 600;
+    --fw-bold: 700;
+    --fw-boldest: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+.btn {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+
+.sunny-top {
+    background-image: url('./images/mobile/image-header.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    overflow: hidden;
+}
+
+/* remove border on menu button */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* change color of hamburger menu to white */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+}
+
+.sunny-top .nav-link {
+    color: var(--white);
+}
+
+.sunny-top .btn-light {
+    border: none;
+    background-color: var(--white);
+    color: var(--very-dark-grayish-blue);
+    border-radius: 100px;
+    padding: .5rem 1.25rem;
+    text-transform: uppercase;
+
+}
+
+.sunny-top .btn-light:hover {
+    background-color: rgba(255, 255, 255, .5);
+    color: var(--white);
+}
+
+.navbar-collapse::before {
+    content: '';
+    background-color: var(--white);
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    top: -.8rem;
+    right: 0rem;
+    transform: rotate(270deg);
+    display: none;
+}
+
+.down-arrow-img {
+    width: 110px;
+    animation: bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(-1.5rem);
+    }
+
+    to {
+        transform: translateY(2.5rem);
+
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-collapse {
+        background-color: white;
+        text-align: center;
+        padding: 2rem;
+        width: 80%;
+        border-radius: 4px;
+        border-top-right-radius: 0px;
+    }
+
+    .navbar-collapse .nav-link {
+        color: var(--dark-grayish-blue);
+    }
+
+    .navbar-collapse .btn-light {
+        background-color: var(--yellow);
+        padding: 1rem 2rem;
+    }
+
+    .navbar-collapse::before {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 991px) {
+
+    .sunny-top {
+        background-image: url('./images/desktop/image-header.jpg');
+    }
+
+    .sunny-top-text {
+        margin-top: 8rem !important;
+    }
+}
