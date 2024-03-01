@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [click here](https://github.com/olopcodes/sunnyside-fem/settings/pages)
+- Live Site URL: [click here](https://olopcodes.github.io/sunnyside-fem/)
 
 ## My process
 
