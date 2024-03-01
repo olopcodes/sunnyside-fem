@@ -222,6 +222,11 @@ h4,
     border-color: var(--desaturated-cyan-design-text);
 }
 
+.sunny-gallery img {
+    height: 400px;
+    /* width: 100%; */
+}
+
 
 @keyframes bounce {
     from {
