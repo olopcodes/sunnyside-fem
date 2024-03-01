@@ -48,6 +48,18 @@ h4,
     font-weight: 700;
 }
 
+.modal-title {
+    color: var(--moderate-cyan-footer);
+}
+
+.btn-primary {
+    background-color: var(--moderate-cyan-footer);
+}
+
+.btn-primary:hover {
+    background-color: var(--desaturated-cyan-design-text);
+}
+
 .sunny-top {
     background-image: url('./images/mobile/image-header.jpg');
     background-position: center;
